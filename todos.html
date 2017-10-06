@@ -6,18 +6,21 @@
 	</head>
 
 	<body>
-		<h1 class="main-title">todos</h1>
 
-		<div class="select-list">
-			<button class="select-all">
-	            <img 
-	            alt="select"
-	           	src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/select-all.png">
-	        </button>
-			<input type="text" name="todos" placeholder="What need to be done?">
+		<div class="header" role="banner">
+			<h1 class="main-title">todos</h1>
 		</div>
 
-		<div class="selected-items">
+		<div class="selected-items" role="main">
+			<div class="select-list" >
+				<button class="select-all">
+		            <img 
+		            alt="select"
+		           	src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/select-all.png">
+		        </button>
+				<input type="text" name="todos" placeholder="What need to be done?">
+			</div>
+
 			<div class="item">
 				<button class="selected">
 		            <img 
@@ -63,9 +66,9 @@
 		<div class="bottom">
 			<p class="left-items">3 items left</p>
 			<div class="items-filters">
-				<input type="radio" name="item-filter">All
-				<input type="radio" name="item-filter">Active
-				<input type="radio" name="item-filter">Completed
+				<input type="radio" name="item-filter" aria-label="All">All
+				<input type="radio" name="item-filter" aria-label="Active">Active
+				<input type="radio" name="item-filter" aria-label="Completed">Completed
 			</div>
 			<p>
 				<button name="clear-all-button">Clear completed</button>
