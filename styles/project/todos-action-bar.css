@@ -1,0 +1,45 @@
+.todos-action-bar {
+    display: flex;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    color: #888;
+    font-weight: 200;
+}
+
+    .todos-action-bar_counter {
+        order: 1;
+        padding-left: 10px;
+        float: left;
+        color: inherit;
+        font-weight: inherit;
+    }
+
+    .todos-action-bar_filters {
+        order: 2;
+        margin: 0 auto;
+    }
+
+        .todos-filter {
+            outline: none;
+            background: none;
+            border: none;
+            color: inherit;
+            font-weight: inherit;
+        }
+
+            .todos-filter.__active {
+                border: 1px solid #808080;
+                border-radius: 3px;
+            }
+
+    .todos-actions-bar_remove-done {
+        order: 3;
+        float: right;
+        position: relative;
+        outline: none;
+        background: none;
+        border: none;
+        color: inherit;
+        font-weight: inherit;
+    }

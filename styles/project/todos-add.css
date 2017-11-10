@@ -1,0 +1,50 @@
+.todos-add {
+}
+
+.todos-add:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.todos-add_select-all {
+    width: 64px;
+    height: 64px;
+    background: none;
+    border: none;
+    position: relative;
+    float: left;
+}
+
+.todos-add_select-all_icon {
+    background: url("../../img/icons/select-all.png") no-repeat 0 0;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    margin: -6px -12px;
+    left: 50%;
+    top: 50%;
+}
+
+.todos-add_new-item-wrapper {
+    overflow: hidden;
+}
+
+.todos-add_new-item {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    background: none;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 200;
+    padding-right: 12px;
+    margin-top: 14px;
+    outline: none;
+}
+
+.todos-add_new-item::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
