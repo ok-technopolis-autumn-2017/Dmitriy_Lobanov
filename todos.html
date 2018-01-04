@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>todos</title>
+    </head>
+    <body>
+        <div class="todos-main-wrapper">
+            <div class="todos-header">
+                <h1 class="todos-header_title">todos</h1>
+            </div>
 
+            <div class="todos-main-contatiner">
+                <div class="todos-add">
+                    <button class="todos-add_select-all" aria-label="Select all like done">
+                        <div class="todos-add_select-all_icon"></div>
+                    </button>
+                    <div class="todos-add_new-item-wrapper">
+                        <input class="todos-add_new-item"
+                               placeholder="What needs to be done?"
+                               aria-label="Add new TODO item"/>
+                    </div>
+                </div>
+
+                <div class="todos-items-list">
+                    <div class="todos-item">
+                        <div class="todos-item_checkbox-wrapper">
+                            <input class="todos-item_checkbox" type="checkbox" aria-label="Checkbox: done or undone"/>
+                            <div class="todos-item_checkbox-icon"></div>
+                        </div>
+                        <div class="todos-item_text-wrapper">
+                            <textarea class="todos-item_text" aria-label="Item name" readonly>HTML</textarea>
+                        </div>
+                        <button class="todos-item_remove-item" aria-label="Delete item">
+                            <div class="todos-item_remove-item_icon"></div>
+                        </button>
+                    </div>
+
+                    <div class="todos-item">
+                        <div class="todos-item_checkbox-wrapper">
+                            <input class="todos-item_checkbox" type="checkbox" aria-label="Checkbox: done or undone"/>
+                            <div class="todos-item_checkbox-icon"></div>
+                        </div>
+                        <div class="todos-item_text-wrapper">
+                            <textarea class="todos-item_text" aria-label="Item name" readonly>CSS</textarea>
+                        </div>
+                        <button class="todos-item_remove-item" aria-label="Delete item">
+                             <div class="todos-item_remove-item_icon"></div>
+                        </button>
+                    </div>
+
+                    <div class="todos-item">
+                        <div class="todos-item_checkbox-wrapper">
+                            <input class="todos-item_checkbox" type="checkbox" aria-label="Checkbox: done or undone"/>
+                            <div class="todos-item_checkbox-icon"></div>
+                        </div>
+                        <div class="todos-item_text-wrapper">
+                            <textarea class="todos-item_text" aria-label="Item name" readonly>JS</textarea>
+                        </div>
+                        <button class="todos-item_remove-item" aria-label="Delete item">
+                             <div class="todos-item_remove-item_icon"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="todos-action-bar">
+                    <div class="todos-action-bar_counter" aria-label="Counter of undone items">
+                        4 items left
+                    </div>
+
+                    <div class="todos-action-bar_filters">
+                        <button class="todos-filter" value="all" aria-label="Show all items">
+                            All
+                        </button>
+                        <button class="todos-filter __active" value="active" aria-label="Show undone items">
+                            Active
+                        </button>
+                        <button class="todos-filter" value="completed" aria-label="Show done items">
+                            Completed
+                        </button>
+                    </div>
+
+                    <button class="todos-actions-bar_remove-done" aria-label="Delete all done items">
+                        Clear completed
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
